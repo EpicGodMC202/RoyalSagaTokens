@@ -1,6 +1,10 @@
 
 Made on Request from **Invenstory**
 
+**Requirements** - **Plugin will not start without NBTAPI**
+
+- Minecraft 1.8 - 1.8.9
+- NBTAPI https://www.spigotmc.org/resources/nbt-api.7939/
 
 **Concept**
 
