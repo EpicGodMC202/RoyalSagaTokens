@@ -1,0 +1,131 @@
+#the number of tokens a player will start.
+startAmount: 0
+
+#Wether admins will see when errors happen
+doAdminMessageErrors: true
+
+#Config regarding topTen
+topTen:
+  #How often the topten should recalculate value in seconds
+  renewInterval: 120
+
+#Config regarding TokenDrops
+drop:
+  #The max range where the change will be calculated in
+  maxRange: 100
+  #The Chance, right now on every crop break player has 20/100 chance of getting token
+  chance: 20
+  #Wether drops are enabled, if this is on false none can get tokens by farming
+  enabled: true
+  #Amount of tokens given when player gets tokens from farming
+  amount: 1
+
+#Tokens top update, delay in seconds.
+tokenTopUpdate: 120
+
+#Config regarding some items
+items:
+  #The Withdraw Item
+  withdraw:
+    #ItemType this only works with item NAMES
+    item: BOOK
+    #ItemDamage - this is the dataValue of the item E.G. Stone:1
+    damage: 0
+    #Wether the item should glow E.G. look enchanted
+    glow: true
+    #Name Of the item Ingame
+    name: 'Tokens'
+    #Lore of the item Ingame
+    lore:
+      - 'Right-Click to receive'
+      - 'the tokens.'
+      - ''
+      - 'Value: %amount%'
+      - 'Signer: %player%'
+
+#Config regarding the confirm GUI
+confirmer:
+  #Gui name
+  name: "Are you sure?"
+  #Gui Size
+  size: 9
+  #Panels for decoration
+  panels:
+    decoItem1:
+      item: "STAINED_GLASS"
+      damage: 15
+      name: '&f'
+      itemAmount: 1
+      slots:
+        - '0'
+        - '1'
+        - '2'
+        - '4'
+        - '6'
+        - '7'
+        - '8'
+#Config regarding accept button
+  accept:
+    item: "EMERALD_BLOCK"
+    damage: 0
+    name: "&aAccept"
+    itemAmount: 1
+    lore:
+      - ''
+    slot: 3
+#Config regarding decline button
+  decline:
+    name: "&cDecline"
+    item: "REDSTONE_BLOCK"
+    itemAmount: 1
+    lore:
+      - ''
+    damage: 0
+    slot: 5
+
+###################################
+# Config regarding the token shop #
+#                                 #
+#   Any New Shops you create      #
+#    Also need to be set in       #
+#           Shops.yml             #
+###################################
+
+
+#Shop GUI config
+shop:
+  name: "&c&lShop Menu"
+  size: 27
+  #Config regarding the currentTokens Item
+  currentTokens:
+    item: "GOLD_NUGGET"
+    damage: 0
+    itemAmount: 1
+    slot: 22
+    name: '&6&lCurrent Tokens'
+    lore:
+      - '&7You have current %balance% tokens.'
+  shops:
+    #This is the shops IDENTIFIER make sure its exactly the same as in shops.yml or it will not work - Case Sensitive
+    testShop:
+      #Config regarding the BACK button of this shop
+      backButton:
+        item: "STONE_BUTTON"
+        damage: 0
+        itemAmount: 1
+        name: "&c&lBACK"
+        lore:
+          - '&7Click to go back to the main menu'
+        slot: 25
+      #Config regarding the ICON of this shop shown in the main shop menu
+      icon:
+        item: "GRASS"
+        damage: 0
+        itemAmount: 1
+        name: "&6&lTestShop"
+        lore:
+          - ''
+          - '&cThis Is A TestShop'
+        slot: 4
+
+

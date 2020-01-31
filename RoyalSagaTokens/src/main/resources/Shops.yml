@@ -1,0 +1,51 @@
+#IDENTIFIER
+testShop:
+  inventoryName: "&6&lTestShop"
+  size: 36
+  #This description is shown in the cmd /token "shoplist"
+  description: "This shop sells junk! :)"
+  panels:
+    decoItem1:
+      item: "STAINED_GLASS"
+      damage: 15
+      name: "&f"
+      itemAmount: 1
+      lore:
+        - ''
+      slots:
+        - '0'
+        - '1'
+        - '2'
+        - '3'
+        - '4'
+        - '5'
+        - '6'
+        - '7'
+        - '8'
+        - '9'
+        - '17'
+        - '18'
+        - '26'
+        - '27'
+        - '28'
+        - '29'
+        - '30'
+        - '31'
+        - '32'
+        - '33'
+        - '34'
+        - '35'
+  items:
+    #Item Identifier
+    testItem1:
+      item: "TRIPWIRE_HOOK"
+      damage: 0
+      name: '&c1 &eVote Key'
+      itemAmount: 1
+      slot: 10
+      lore:
+        - '&ePrice: &c5 &eTokens'
+      price: 5
+      commands:
+        - 'crate gk %player% Vote 1'
+

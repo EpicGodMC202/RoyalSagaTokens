@@ -1,0 +1,10 @@
+main: me.epicgodmc.royalsagatokens.RoyalSagaTokens
+version: 1.0
+name: RoyalSagaTokens
+author: EpicGodMC
+depend: [NBTAPI]
+commands:
+  tokens:
+    description: Main Tokens Command
+    usage: /<command>
+    aliases:  [token]

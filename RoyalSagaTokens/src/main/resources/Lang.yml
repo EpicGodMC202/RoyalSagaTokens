@@ -1,0 +1,68 @@
+pluginPrefix: "&6&lTokens&f: "
+adminMessagePrefix: "&6&lTokens &cAdminMsg&f: &e"
+usages:
+  admin:
+    - "&7&m------------------------"
+    - "&a/tokens &7: &fShows your current tokens"
+    - "&a/tokens <player> &7: &fShows player`s tokens"
+    - '&a/tokens give/add <player> <amount> &7: &fGives tokens to a specific player'
+    - '&a/tokens take/remove <player> <amount> &7: &fTakes tokens from a specific player'
+    - '&a/tokens clear <player> &7: &fReset a players token balance'
+    - '&a/tokens giveall <amount> &7: &f[Gives tokens to everyone online'
+    - '&a/tokens reload &7: &fReload the plugin'
+    - "&a/tokens pay <player> <amount> &7: &fPay the specific player"
+    - "&a/tokens shop <shop> &7: &fOpens the specific shop"
+    - "&a/tokens shoplist &7: &flist of all the tokens shops"
+    - "&a/tokens withdraw <amount> &7: &fWithdraw an amount of tokens to an item"
+    - "&a/tokens top &7: &fList of top 10 players"
+    - "&a/tokens help &7: &fList of commands"
+    - "&7&m------------------------"
+  player:
+    - "&7&m------------------------"
+    - "&a/tokens &7: &fShows your current tokens"
+    - "&a/tokens <player> &7: &fShows player`s tokens"
+    - "&a/tokens pay <player> <amount> &7: &fPay the specific player"
+    - "&a/tokens shop <shop> &7: &fOpens the specific shop"
+    - "&a/tokens shoplist &7: &flist of all the tokens shops"
+    - "&a/tokens withdraw <amount> &7: &fWithdraw an amount of tokens to an item"
+    - "&a/tokens top &7: &fList of top 10 players"
+    - "&a/tokens help &7: &fList of commands"
+    - "&7&m------------------------"
+topTen:
+  header: '&7&m------------------------'
+  footer: '&7&m------------------------'
+  format: '&f%count% %player% %amount%'
+messages:
+  showTokens: "&7You have current &c%tokens%&7."
+  showTokensOther: "&c%player% &7has &c%tokens%&7."
+  depositTokens: "&7You have deposit &c%amount% &7tokens."
+  withdrawTokens: "&7%amount% of tokens have been withdrawn"
+  giveTokens: "&7You gave &c%amount% &7of tokens to &c%player%&7."
+  giveTokensAll: "&7You gave &c%amount% &7of tokens to everyone online."
+  giveTokensAllBroadcast: "&7%player% has given everyone %amount% tokens"
+  takeTokens: "&7You took &c%amount% &7of tokens from &c%player%&7."
+  reload: "&aReloaded."
+  payTokens: "&c%amount% &7have been sent to &c%player%&7."
+  noPermission: "&cYou don't have permission to do this."
+  noPermissionShop: "&cYou don't have permission to enter this shop."
+  notEnoughTokensOther: "&c%player% does not have enough tokens to do this"
+  notEnoughTokens: "&cYou don't have enough tokens to do this."
+  notEnoughTokensForPurchase: "&cYou don't have enought tokens to buy this."
+  receiveTokensFromOther: "&aYou received %amount% of tokens from %player%."
+  receiveTokensFromConsole: "&a%amount% tokens has been added to your balance."
+  receiveTokensFromFarming: "&aYou received %amount% from farming."
+  shopNotFound: "&cThis shop doesn't exists. /tokens shoplist."
+  invalidArgs: "&cThis is not a command"
+  invalidArgLenght: "&cExpected %count% arguments!"
+  playerNotFound: "&cPlayer not found"
+  minimalWithdrawBlocked: "&cYou can't withdraw less than 1 token."
+  minimalPaymentBlocked: "&cYou can't send less than 1 token"
+  purchaseSuccess: "&7You bought %item% for %cost%. Current tokens %amount%."
+  fullInventory: "&cInventory is full."
+  shopListFormat: "&f%number% &7%name% - %desc%"
+  commandError: "&cAn unexpected error has occurred please contact staff."
+  onlyPlayers: "&cOnly players can run this command!."
+  introduceInt: "&cPlease introduce a valid number"
+  tokenClearSucceedMemory: "&a%player%`s tokens have successfully been cleared from memory"
+  tokenClearSucceedFile: "&a%player%`s tokens have successfully been cleared from File"
+
